@@ -1,1 +1,1 @@
-# Credit-Suisse-Sentiment-Analysis
+# CS-Sentiment-Analysis

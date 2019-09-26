@@ -11,7 +11,7 @@
   3. Integration with previous CS code 
 
 #### The Scraper
-A simple way to do this is to utilize the search bar of each website. Load the keywords to be searched to the search bar, identify the internal article links in each result: `html <span class="result">` or something like this. 
+A simple way to do this is to utilize the search bar of each website. Load the keywords to be searched to the search bar, identify the internal article links in each result: ` <span class="result">` or something like this. 
 The returned URL could be relative or absolute. 
 Then extract the required text from each article page.
 The returned text data should be loaded into dataframe, with proper attribute names. (Then output a csv file, or JSON?) 
@@ -21,9 +21,13 @@ The returned text data should be loaded into dataframe, with proper attribute na
 
 #### To run the crawler
 Simply open a commandline tool, cd to your work directory and run:
-```python suspended_crawler.py```
+```bash 
+python suspended_crawler.py
+```
 and 
-```python news_crawler.py```
+```bash 
+python news_crawler.py
+```
 <p> The output should be two csv files. Need to specify parameters and the suspended stock list path in the news_crawler.py. </p>
 <p> The previous code is a better approach to this task I think. My implementation is kind of crappy and definitely needs to be improved (or to be replaced). </p>
 

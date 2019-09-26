@@ -33,7 +33,7 @@ class Content:
 
 
 ## Website structure class
-## Parameters to be speficied by us in "sites" 
+## Parameters to be speficied by us in "sitesParam" 
 class Website:
     def __init__(self, name, url, searchUrl, resultListing, resultUrl, absoluteUrl, titleTag, bodyTag):
         self.name = name

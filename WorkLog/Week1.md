@@ -16,7 +16,7 @@ The returned URL could be relative or absolute.
 Then extract the required text from each article page.
 The returned text data should be loaded into dataframe, with proper attribute names. (Then output a csv file?) 
 
-<p> I used some previous code. </p> 
+<p> I used lots of previous code. </p> 
 
 
 #### To run the crawler

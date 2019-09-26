@@ -27,6 +27,7 @@ class Content:
             'symbol': self.keyword,
             'title': self.title,
             'text': self.body
+            #'url': self.url
         }
         news_list.append(news_item)
 
@@ -86,12 +87,18 @@ class Crawler:
 
 
 ## Here to specify a list of websites along with relevant information for scraping 
-## Feel free to add as many sites as you want, but double check each parameter before running 
-## self, name, url, searchUrl, resultListing, resultUrl, absoluteUrl, titleTag, bodyTag
+## Double check each parameter before running 
+## name, url, searchUrl, resultListing, resultUrl, absoluteUrl, titleTag, bodyTag
 sitesParam = [
     ['Reuters', 'http://reuters.com', 'http://www.reuters.com/search/news?blob=',
     'div.search-result-content', 'h3.search-result-title a', False, 'h1',
     'div.StandardArticleBody_body']
+
+#    ['SCMP', 'https://www.scmp.com', 'https://www.scmp.com/content/search/',
+#    'li.search-results__item item', 'div.wrapper__content content a', False, 'h1',
+#    'div.details__body body', 'div.wrapper__published-date']
+# The SCMP one is not working though
+    
 ]
 sites = []
 for row in sitesParam:
@@ -100,22 +107,22 @@ for row in sitesParam:
 
 crawler = Crawler()
 
-## Here to specify a query list (should be tickers) as keywords
+## Here to specify keywords(should be tickers)
 ## e.g. ['ADOM', 'ASV', 'AESEW', 'EMMA']
-suspended = pd.read_csv('/Users/Frank.peng/Desktop/suspended_2019-09-25-18-39.csv')
+suspended = pd.read_csv('"Enter_Your_Path_Here"')
 keywords = np.asarray(suspended['Symbol'])
 ## keywords =['ADOM', 'ASV', 'AESEW', 'GOOGL', 'MSFT']
 
 for k in keywords:
     print('Working on: ' + k + ' now')
-    for targetSite in sites:
-        crawler.search(k, targetSite)
+    for s in sites:
+        crawler.search(k, s)
 
 
 output_file = datetime.datetime.now().strftime("news_output_%Y-%m-%d-%H-%M.csv")
 df_news_output = pd.DataFrame(news_list)
-for e in news_list:
-    df_news_output.loc[len(df_news_output)] = e
+for n in news_list:
+    df_news_output.loc[len(df_news_output)] = n
 
 df_news_output.to_csv(output_file, encoding='utf-8', index=False)
 

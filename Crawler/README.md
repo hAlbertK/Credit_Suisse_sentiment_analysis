@@ -6,7 +6,7 @@
 #### Tasks
   1. Check crawling availability (robots.txt)
 
-  2. Building scrapers for each site
+  2. Build scrapers for each site
 
   3. Integration with previous CS code 
 

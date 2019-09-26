@@ -20,7 +20,7 @@ The returned text data should be loaded into dataframe, with proper attribute na
 
 
 #### To run the crawler
-Simply open a commandline tool, cd to your work directory and run:
+Simply open a commandline tool, cd to the directory and run:
 ```bash 
 $ python suspended_crawler.py
 ```
@@ -29,7 +29,7 @@ and
 $ python news_crawler.py
 ```
 <p> The output should be two csv files. Need to specify parameters and the suspended stock list path in the news_crawler.py. </p>
-<p> The previous code is a better approach to this task I think. My implementation is kind of crappy and definitely needs to be improved (or to be replaced). </p>
+<p> The previous code is a better approach to this task I think. My implementation is kind of dumb, crappy and definitely needs to be be replaced. </p>
 
 
 

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # encoding=utf-8
 
+## Basically the code from previous implementation  
+
 import re
 import urllib
 import requests 

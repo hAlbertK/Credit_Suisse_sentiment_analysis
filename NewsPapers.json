@@ -1,0 +1,204 @@
+{
+  "yahoo finance": {
+   "link": "https://finance.yahoo.com"},
+  "globenewswire": {
+    "rss": "https://www.globenewswire.com/Rss/List",
+    "link": "https://www.globenewswire.com"
+   },
+  "cnn": {
+    "rss": "http://www.cnn.com/services/rss",
+   "link": "http://edition.cnn.com"
+  },
+  "google": {"rss":"https://news.google.com/rss",
+             "link": "https://news.google.com"},
+  "bloomberg": {
+    "link": "https://www.bloomberg.com/opinion-economics"
+  },
+  "street": {
+     "link": "https://www.streetinsider.com/"
+  },
+  "theguardian": {
+    "rss": "https://www.theguardian.com/uk/rss",
+    "link": "https://www.theguardian.com/international"
+  },
+  "forbes": {
+    "link": "https://www.forbes.com/"
+  },
+  "reuters": {
+     "rss": "https://www.reuters.com/tools/rss",
+     "link": "https://www.reuters.com/"
+  },
+  "foxnews": {
+    "link": "http://www.foxnews.com/"
+  },
+  "nbcnews": {
+    "link": "http://www.nbcnews.com/"
+  },
+  "washingtonpost": {
+    "rss": "http://feeds.washingtonpost.com/rss/world",
+    "link": "https://www.washingtonpost.com/"
+  },
+  "cnbc": {
+    "rss": "https://www.cnbc.com/rss-feeds",
+    "link": "https://www.cnbc.com"
+  },
+  "nasdaq": {
+    "rss": "https://www.nasdaq.com/nasdaq-RSS-Feeds",
+    "link": "https://www.nasdaq.com"
+   },
+   "stockmarketwire": {
+    "rss": "https://www.marketwatch.com/rss",
+    "link": "http://www.stockmarketwire.com"
+   },
+   "prnewswire": {
+    "rss": "https://www.feedspot.com/infiniterss.php?q=site:https%3A%2F%2Fwww.prnewswire.com%2Frss%2Fall-news-releases-from-PR-newswire-news.rss",
+    "link": "https://www.prnewswire.com"
+   },
+   "globenewswire": {
+    "rss": "https://www.globenewswire.com/Rss/List",
+    "link": "https://www.globenewswire.com"
+   },
+   "sec": {
+    "rss": "https://www.sec.gov/about/secrss.shtml",
+           "link":"https://www.sec.gov/edgar/searchedgar/companysearch.html"
+   },
+   "cna": {
+    "rss": "https://www.channelnewsasia.com/news/rss",
+    "link": "https://www.channelnewsasia.com/news/international"
+   },
+   "straitstimes": {
+    "rss": "https://www.straitstimes.com/rss-feeds",
+    "link": "https://www.straitstimes.com/global"
+   },
+   
+  "bbc": {
+    "rss": "http://feeds.bbci.co.uk/news/rss.xml",
+    "link": "http://www.bbc.com/"
+  },
+  
+  "breitbart": {
+    "link": "http://www.breitbart.com/"
+  },
+  "infowars": {
+    "link": "https://www.infowars.com/"
+  },
+  "foxnews": {
+    "link": "http://www.foxnews.com/"
+  },
+  "nbcnews": {
+    "link": "http://www.nbcnews.com/"
+  },
+  "washingtonpost": {
+    "rss": "http://feeds.washingtonpost.com/rss/world",
+    "link": "https://www.washingtonpost.com/"
+  },
+  "theonion": {
+    "link": "http://www.theonion.com/"
+  },
+  
+   "ft": {
+    "rss": "https://www.ft.com/news-feed",
+    "link": "https://www.ft.com"
+  },
+   "mediapost": {
+    
+    "link": "https://www.mediapost.com/publications/mediadailynews/"
+  },
+  "rssorange": {
+    "link": "http://rssorange.com/"
+      },
+  "greatfeeds": {
+    
+    "link": "https://great-feeds.com"
+  },
+  "wingee": {
+    
+    "link": "http://www.wingee.com"
+  },
+  "rsschomp": {
+    
+    "link": "http://rsschomp.com/"
+  },
+  "realtyfeed": {
+    
+    "link": "http://www.realtyfeedsearch.com"
+  },
+  "topsite": {
+    "rss": "http://topsiteswebdirectory.com/rssfeedsdirectory",
+    "link": "http://topsiteswebdirectory.com"
+    
+  },
+  "feedsee": {
+    
+    "link": "https://feedsee.com"
+  },
+  "rssreader": {
+    "rss": "http://www.rssreader.com/rssfeeds.htm",
+    "link": "http://www.rssreader.com"     },
+  "fortune": {
+    "rss": "https://fortune.com/tag/rss/",
+	"link":"https://fortune.com"
+    
+  },
+  "yahoo": {
+    "rss": "https://developer.yahoo.com/rss",
+	"link":"https://developer.yahoo.com"
+    
+  },
+  "investing": {
+    "rss": "https://www.investing.com/webmaster-tools/rss",
+	"link":"https://www.investing.com"
+    
+  },
+  "seekingalpha": {
+    "rss": "https://seekingalpha.com/page/feeds",
+	"link":"https://seekingalpha.com"
+    
+  },
+  "morningstar": {
+    "rss": "https://news.morningstar.com/rss/rss.html",
+	"link":"https://news.morningstar.com"
+    
+  },
+  "indiatimes": {
+    "rss": "https://economictimes.indiatimes.com/rss.cms",
+	"link":"https://economictimes.indiatimes.com"
+    
+  },
+  "businessstandard": {
+    "rss": "https://www.business-standard.com/search?q=rss-feeds",
+	"link":"https://www.business-standard.com"
+    
+  },
+  "marketwatch": {
+    "rss": "https://www.marketwatch.com/rss/",
+	"link":"https://www.marketwatch.com"
+    
+  },
+  "mebfaber": {
+    "rss": "https://mebfaber.com/rss-subscriber",
+    "link": "https://mebfaber.com"
+  },
+  "philstockworld": {
+    
+    "link": "https://www.philstockworld.com"
+  },
+  "reddit": {
+    "rss": "https://www.reddit.com/wiki/rss",
+	"link":"https://www.reddit.com/"
+    
+  },
+  "financialexpress": {
+    "rss": "https://www.financialexpress.com/syndication/",
+    "link": "https://www.financialexpress.com/syndication/"
+  },
+  "businessline": {
+    "rss": "https://www.thehindubusinessline.com/rssfeeds/",
+    "link": "https://www.thehindubusinessline.com"},
+  "financialexpress": {
+    "rss": "https://www.businesstoday.in/rssFeed.jsp",
+    "link": "https://www.businesstoday.in"},
+	"aubusiness": {
+    "rss": "https://www.news.com.au/more-information/rss-feeds",
+    "link": "https://www.news.com.au"}
+}

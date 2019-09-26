@@ -11,7 +11,7 @@
   3. Integration with previous CS code 
 
 #### The Scraper
-A simple way to do this is to utilize the search bar of each website. Load the keywords to be searched to the search bar, identify the internal article links in each result: ```<span class="result">``` or something like this. 
+A simple way to do this is to utilize the search bar of each website. Load the keywords to be searched to the search bar, identify the internal article links in each result: ```html <span class="result">``` or something like this. 
 The returned URL could be relative or absolute. 
 Then extract the required text from each article page.
 The returned text data should be loaded into dataframe, with proper attribute names. (Then output a csv file, or JSON?) 

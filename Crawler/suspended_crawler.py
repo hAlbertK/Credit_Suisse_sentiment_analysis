@@ -43,7 +43,7 @@ for row in table.find_all("tr", attrs = {"class" : "rgRow"}):
     stocks.append(stocklist)
 ##  print(stocklist)
 
-## Stupid me, there is another rgaltrow class 
+## Stupid me. There is another rgaltrow class 
 for row in table.find_all("tr", attrs = {"class" : "rgAltRow"}):
     stocklist = []
     for cell in row.find_all("td"):

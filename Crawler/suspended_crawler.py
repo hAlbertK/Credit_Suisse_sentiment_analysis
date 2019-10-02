@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # encoding=utf-8
 
-## Basically the code from previous implementation  
-
 import re
 import urllib
 import requests 
@@ -45,6 +43,15 @@ for row in table.find_all("tr", attrs = {"class" : "rgRow"}):
     stocks.append(stocklist)
 ##  print(stocklist)
 
+## Stupid me, there is another rgaltrow class 
+for row in table.find_all("tr", attrs = {"class" : "rgAltRow"}):
+    stocklist = []
+    for cell in row.find_all("td"):
+        stocklist.append(cell.text)
+    stocklist = [element.replace('\xa0', 'None') for element in stocklist]
+    stocks.append(stocklist)
+
+ 
 for e in stocks:
     df.loc[len(df)] = e
 

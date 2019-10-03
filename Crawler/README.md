@@ -26,6 +26,5 @@ $ python news_crawler.py
 1. Work on the publish date of each article
 2. Get more articles from various websites
 3. Examine the relevance of the returned articles 
-4. Twerk the previous implementation code a little bit for an output tailored to our needs 
-5. 
-6. 
+4. Tweak the previous implementation code a little bit for an output tailored to our needs 
+

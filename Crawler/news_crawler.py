@@ -12,7 +12,7 @@ news_list = []
 ## Article content class
 class Content:
 
-    ## base class for all articles
+    ## Base article structure 
     def __init__(self, keyword, url, title, body):
         self.keyword = keyword
         self.url = url

@@ -3,6 +3,7 @@
 The new scraper is built on top of the previous one and is tailored to utilize Google News search function. The class structure is preserved. 
 <p> Need to install newspaper3k to run the crawler</p> 
 <p> FYI: https://newspaper.readthedocs.io/en/latest/ </p>
+
 #### To run the crawler
 Simply open a commandline tool, cd to the directory and run:
 ```bash 

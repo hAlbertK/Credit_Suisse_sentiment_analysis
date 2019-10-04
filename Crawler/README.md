@@ -1,7 +1,7 @@
 
 #### The Scraper
 The new scraper is built on top of the previous one and is tailored to utilize Google News search function. The class structure is preserved. 
-<p> Need to import newspaper3k to run the crawler (Thanks Peilin! I'm using your code for this part.)</p> 
+<p> Need to import newspaper3k to run the crawler </p> 
 <p> FYI: https://newspaper.readthedocs.io/en/latest/ </p>f
 
 #### To run the crawler

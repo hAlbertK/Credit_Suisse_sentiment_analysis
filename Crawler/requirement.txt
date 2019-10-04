@@ -4,3 +4,7 @@ pandas
 numpy 
 datetime
 csv
+re
+time
+randint
+newspaper

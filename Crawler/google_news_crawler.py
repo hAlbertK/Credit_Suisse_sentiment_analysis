@@ -73,8 +73,6 @@ class Crawler:
 
     ##  Main search function that searches for a given keyword and records all pages returned 
     def search(self, query_keyword, query_site, site):
-        # https://news.google.com/search?q=site%3Astreetinsider.com%20"ADOM"%20when%3A1y&hl=en-US&gl=US&ceid=US%3Aen
-
         time.sleep(randint(0, 3)) ## specify a throttle to avoid hitting servers too hard since we have more requests; a randomly generated int
 
         bs = self.getPage('https://news.google.com/search?q=site%3A'+query_site+'%20%22'+query_keyword+'%22%20when%3A1y&hl=en-US&gl=US&ceid=US%3Aen')
@@ -98,7 +96,7 @@ class Crawler:
 
 
 ## Not necessarily needed in crawling Google News 
-## I just preserved the previous structure for later use
+## Preserved the previous structure for later use
 sitesParam = [
   #  ['Reuters', 'http://reuters.com', 'http://www.reuters.com/search/news?blob=',
   #  'div.search-result-content', 'h3.search-result-title a', False, 'h1',
@@ -115,13 +113,19 @@ crawler = Crawler()
 
 # All tickers to search 
 suspended = pd.read_csv('/Users/Frank.peng/Desktop/VS_workspace/Python_in_VS/CS_Project/Crawler/suspended_2019-10-03-11-39.csv')
-query_keywords = np.asarray(suspended['Symbol'])
+suspended['query'] = suspended['Issuer Name'] + (' | ' + suspended['Symbol']) 
+query_keywords = np.asarray(suspended['query'])
 
 
 # All websites to search
-# The sec does not return results though, need to figure that out 
-query_sites = ['scmp.com', 'streetinsider.com', 'theguardian.com', 'forbes.com', 'bloomberg.com', 'reuters.com', 'cnbc.com', 'nasdaq.com', 'stockmarketwire.com', 
-'prnewswire.com', 'globenewswire.com', 'sec.gov', 'channelnewsasia.com', 'straitstimes.com', 'finance.yahoo.com']
+#query_sites = ['scmp.com', 'streetinsider.com', 'theguardian.com', 'forbes.com', 'bloomberg.com', 'reuters.com', 'cnbc.com', 'nasdaq.com', 'stockmarketwire.com', 
+#'prnewswire.com', 'globenewswire.com', 'sec.gov', 'channelnewsasia.com', 'straitstimes.com', 'finance.yahoo.com']
+
+query_sites = ['reuters.com', 'cnbc.com', 'nasdaq.com','finance.yahoo.com', 'prnewswire.com', 'globenewswire.com']
+
+# Sites not useful: scmp(too many irrelavant results), theguardian(only two irrelevant results), stockmarketwire(unknown reason), sec(unknown reason)
+# channelnewsasia(few results from Reuters), straitstimes.com(few results from Reuters)
+# Sites useful: streetinsider, forbes, bloomberg, Reuters, CNBC, Nasdaq, prnewswire, globenewswire, yahoofinance
 
 # Iterate each site and each keyword 
 for s in query_sites:
@@ -129,7 +133,6 @@ for s in query_sites:
         print('working on ticker:' + k + '    |   on the website: ' + s + '    now')
         crawler.search(k, s, target_site)
         
-
 
 output_file = datetime.datetime.now().strftime("news_output_%Y-%m-%d-%H-%M.csv")
 df_news_output = pd.DataFrame(news_list)
@@ -139,6 +142,7 @@ for e in news_list:
 # Add scraped time, reindex df
 df_news_output['SCRAPED_TIME']=datetime.datetime.now().strftime("%Y-%m-%d-%H-%M")
 df_news_output = df_news_output.reindex(columns=['SYMBOL','SITE_NAME', 'URL','PUBLISH_TIME', 'SCRAPED_TIME', 'TITLE', 'CONTENT'])
+df_news_output.drop_duplicates()
 df_news_output.to_csv(output_file, encoding='utf-8', index=False)
 
     

@@ -11,5 +11,5 @@ $ python suspended_crawler.py
 ```
 and 
 ```bash 
-$ python google_news_crawler.py
+$ python news_crawler.py
 ```

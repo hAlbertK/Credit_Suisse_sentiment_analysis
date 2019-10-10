@@ -117,13 +117,12 @@ for row in sitesParam:
 crawler = Crawler()
 
 # All tickers to search 
-#suspended = pd.read_csv('/Users/Frank.peng/Desktop/VS_workspace/Python_in_VS/CS_Project/Crawler/suspended_2019-10-03-11-39.csv')
 #suspended['query'] = suspended['Issuer Name'] + (' | ' + suspended['Symbol']) 
 #query_keywords = np.asarray(suspended['query'])
 
 
 
-new_tickers = pd.read_csv('/Users/Frank.peng/Desktop/tickers.csv')
+new_tickers = pd.read_csv('')
 new_tickers['query'] = new_tickers['COMPANY'] + (' | ' + new_tickers['SYMBOL']) 
 query_keywords = np.asarray(new_tickers['query'])
 

@@ -1,0 +1,5 @@
+Options Call Parameter Extraction
+   • Build Scrapper to download 10Q & 8K from SEC websites for specified entity
+   • Convert the PDF files into text using python library PyPDF3
+   • Identify the values associated with the parameters of interest from the SEC text
+   • Display the parameters in Tabular form

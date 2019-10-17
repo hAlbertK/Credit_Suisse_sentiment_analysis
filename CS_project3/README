@@ -3,3 +3,8 @@ Options Call Parameter Extraction
    • Convert the PDF files into text using python library PyPDF3
    • Identify the values associated with the parameters of interest from the SEC text
    • Display the parameters in Tabular form
+
+The R cleaning code does the following:
+remove numerical values as we want to focus on changes in text as oppose to changes in reported values
+remove all punctuation and table style tags
+remove special chars using gsub(“[^[:alnum:][:blank:]+?&/\\-]”, “”, text)

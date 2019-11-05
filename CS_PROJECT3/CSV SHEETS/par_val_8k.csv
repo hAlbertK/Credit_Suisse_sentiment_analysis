@@ -1,9 +1,0 @@
-Parameters,Sentences,Values
-volatility,,
-notional,,
-strike percentage,,
-expire,,
-expiry,,
-shares,"[' shares of etsys common stock or a combination of cash and shares of etsys common stock', '196 shares of its common stock concurrently with the pricing of the note offering in privately negotiated transactions effected through one of the initial purchasers or its affiliates', ' shares of its common stock or a combination of cash and shares of its common stock', '4040 shares of etsys common stock per 1']","[196, 4040, 1]"
-premium,['6250 which represents a premium of 150% over the last reported sale price of etsys common stock on september 18'],"[6250, '150%', 18]"
-conversion rate,"['000 principal amount of notes for each trading day of the measurement period was less than 98% of the product of the last reported sale price of etsys common stock and the conversion rate on each such trading day', ' the conversion rate will initially be 11', ' the conversion rate is subject to adjustment in some events but will not be adjusted for any accrued and unpaid interest', ' increase the conversion rate for a holder who elects to convert its notes in connection with such a corporate event']","[0, '98%', 11]"

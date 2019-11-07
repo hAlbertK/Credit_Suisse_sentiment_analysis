@@ -1,1 +1,1 @@
-## News article data retrieved based on new ticker list
+## News article retrieved based on new ticker list 
